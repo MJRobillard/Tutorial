@@ -1,0 +1,82 @@
+.back_container {
+	position: absolute;
+	width:min(100%,950px);
+	left:-5%;
+	top:-6%;
+  }
+  .glow_container{
+	position: absolute;
+	top: 335px;
+	left: 302.5px;
+	animation: flicker 60s infinite;
+
+  }
+  .image3_container {
+	position: absolute;
+	top: 230px;
+	left:200px;
+	animation: rotate-animation 330s infinite;
+  }
+  @keyframes rotate-animation {
+	0% {
+		
+	 	transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+  }
+
+  /* 
+  @keyframes flicker {
+	0% {
+		filter:drop-shadow(0px 0px 0px #6f00ff)
+	}
+	2% {
+		
+		filter:drop-shadow(0px 0px 3px #6f00ff)
+	}
+	10% {
+		filter:drop-shadow(0px 0px 5px #6f00ff)
+	}
+
+	43% {
+		filter:drop-shadow(0px 0px 3px #6f00ff)
+	}
+	45% {
+		
+		filter:drop-shadow(0px 0px 1px #6f00ff)
+	}
+	50% {
+		filter:drop-shadow(0px 0px 5px #6f00ff)
+	}
+	60% {
+		
+		filter:drop-shadow(0px 0px 0px #6f00ff)
+	}
+	61% {
+		filter:drop-shadow(0px 0px 4px #6f00ff)
+	}
+	100%{
+		filter:drop-shadow(0px 0px 5px #6f00ff)
+
+	}
+  }
+  */
+  /* 
+  ZAYNA SHOW THEM THE COOL THING WITH THE INSPECT 
+  */
+  .flex-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fact {
+	margin-bottom: 10px;
+  }
