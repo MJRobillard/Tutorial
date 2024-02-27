@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+  <body>
+     <div id ="Opener">
+
+        <h1>Editing the DOM for Oski the Eternal</h1>
+        <h2 id = "Type">Problem: Oskihas has lots of previous lives, he wants a webpage to cataolgue them</h2>
+
+  
+        <img src="Oski.jpg">
+        <p></p> 
+        <button id = "ChangeColor">Change Color </button >
+        <button onclick = "randomColorRed()">Change RedColor </button >
+
+        
+        <menu>
+            <li> <button id = "All">All  </button ></li>
+            <li> <button id = "Sophomores">Sophomores </button ></li>
+            <li> <button id = "Juniors">Juniors </button ></li>
+            <li> <button id = "Seniors">Seniors </button ></li>
+              <li> <button id = "Remove">Remove </button ></li>
+                <li> <input id = "categoryInput" ></li>
+                <li> <button id = "categoryInputSubmit">Enter </button ></li>
+
+
+        </menu>
+        <div >
+          <table id ="ExShowcase">
+            <tr>
+              <Th>Name</Th>
+              <Th>Grade</Th>
+              <Th>Favourite Food</Th>
+
+            </tr>
+
+          </table>
+
+    </div>
+
+    </div>
+
+    
+    <script>
+        const header = document.querySelector("h1");
+        console.log(header);//      
+        document.getElementById("Type").innerHTML = "Italian";
+    
+
+        const bodd = document.querySelector("body");
+        const temp = document.createElement("P");
+        temp.innerHTML = "YES";
+        bodd.appendChild(temp);
+
+
+        const listStuff = document.querySelectorAll("li");
+        for (let i = 0; i < listStuff.length; i++){
+            listStuff[i].innerHTML = "anything";
+        }
+    
+
+        document.getElementById("ChangeColor").addEventListener("click",function(){
+            document.querySelector("html").style.background = "Blue";
+    
+    
+        });
+
+        function randomColorRed(){
+            document.querySelector("html").style.background = "Red";
+    
+    
+        };
+    
+    
+    </script>
+</body>
+</html>

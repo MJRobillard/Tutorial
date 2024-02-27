@@ -1,0 +1,73 @@
+/* style.css */
+
+/* Center the content vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+  }
+  
+  /* Style the Opener div */
+  .Opener {
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+    height: 100px;
+  }
+  
+  /* Style the menu and make it horizontal */
+  menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  menu li {
+    margin: 0 10px; /* Add some space between menu items */
+  }
+  
+  /* Style the buttons inside the menu */
+  menu li button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  menu li button:hover {
+    background-color: #3445db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Style the image */
+  img {
+    max-width: 100%;
+    
+
+  }
+  
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the headers */
+th {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,3 @@
+[submodule "jsDOM/EditingTheDomTutorial"]
+	path = jsDOM/EditingTheDomTutorial
+	url = https://github.com/MJRobillard/EditingTheDomTutorial

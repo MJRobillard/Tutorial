@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+  <body>
+     <div id ="Opener">
+
+        <h1>Editing the DOM for Oski the Eternal</h1>
+        <h2 id = "Test">Problem: Oskihas has lots of previous lives, he wants a webpage to cataolgue them</h2>
+
+  
+        <img src="Oski.jpg">
+        <p></p> 
+
+        <button id = "test_button"> test</button>
+        <button onclick="redBackground()"> red_button</button>
+
+
+        
+        <menu>
+            <li> <button id = "All">All  </button ></li>
+            <li> <button id = "Sophomores">Sophomores </button ></li>
+            <li> <button id = "Juniors">Juniors </button ></li>
+            <li> <button id = "Seniors">Seniors </button ></li>
+              <li> <button id = "Remove">Remove </button ></li>
+                <li> <input id = "categoryInput" ></li>
+                <li> <button id = "categoryInputSubmit">Enter </button ></li>
+
+
+        </menu>
+        <div >
+          <table id ="ExShowcase">
+            <tr>
+              <Th>Name</Th>
+              <Th>Grade</Th>
+              <Th>Favourite Food</Th>
+
+            </tr>
+
+          </table>
+
+    </div>
+
+    </div>
+
+    
+    <script>
+        const header = document.querySelector("h1");
+        const body = document.querySelector("body");
+        const temp = document.createElement("P");
+        temp.innerHTML = "This is a P tag";
+        body.appendChild(temp);
+
+        const lists = document.querySelectorAll("li");
+        for (let i = 0; i < lists.length; i++) {
+            lists[i].innerHTML = "Random Button Stuff";
+        }
+
+        document.getElementById("test_button").addEventListener("click", function() {
+            document.querySelector("html").style.backgroundColor = "Blue";
+        });
+
+        function redBackground() {
+
+            document.querySelector("html").style.backgroundColor = "Red";
+
+        }
+
+
+
+    
+    
+    </script>
+</body>
+</html>
