@@ -1,0 +1,10 @@
+.styles {
+    h3 {
+      color: red;
+      font-size: larger;
+    }
+    
+    .container {
+      margin-left: 2rem;
+    }
+  }
