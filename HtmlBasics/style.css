@@ -1,0 +1,72 @@
+body {
+    background-color: blue;
+    animation: flashBackground 0.5s infinite alternate;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    transform: rotate(360deg);
+    animation: spin 3s infinite linear, zoom 2s infinite alternate;
+}
+
+@keyframes flashBackground {
+    0% { background-color: blue; }
+    50% { background-color: lime; }
+    100% { background-color: pink; }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes zoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+h1 {
+    color: red;
+    animation: colorChange 1s infinite;
+    font-size: 5em;
+    text-shadow: 5px 5px 5px yellow, 10px 10px 5px black;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    50% { color: orange; }
+    100% { color: purple; }
+}
+
+p {
+    color: hotpink;
+    animation: moveText 2s infinite;
+    letter-spacing: 5px;
+}
+
+@keyframes moveText {
+    0% { margin-left: 0; }
+    50% { margin-left: 50px; }
+    100% { margin-left: 0; }
+}
+
+a {
+    color: green;
+    animation: bounce 1s infinite alternate;
+    text-decoration: underline wavy red;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+img {
+    border: 5px dotted red;
+    animation: rotateImage 5s infinite;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes rotateImage {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
